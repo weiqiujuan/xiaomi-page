@@ -27,7 +27,6 @@
             <span class="sep">|</span>
             <a href="javascript:;">SelectRegion</a>
         </div>
-
         <div id="topbarinfo">
             <a href="javascript:;">登录</a>
             <span class="sep">|</span>
@@ -35,9 +34,9 @@
             <span class="sep">|</span>
             <div id="shopCart">
                 <a href="javascript:;" id="cart">
-                    <i class="iconfont"><i>购物车（0）</i></i>
+                    <i class="iconfont"><span>购物车（0）</span></i>
                 </a>
-                <div class="cartMenu"><span>购物车是空的~~，快去选购吧</span></div>
+                <div class="cartMenu" id="cartMenu"><span>购物车是空的~~，快去选购吧</span></div>
             </div>
         </div>
     </div>
@@ -53,7 +52,7 @@
         <div class="header-nav" id="header-nav">
             <ul class="nav-list">
                 <li id="J_navCategory">
-                    <a href="javascript:;" class="lint-category">
+                    <a href="javascript:;" class="lin-category" style="display: none;">
                         <span class="text">全部商品分类</span>
                     </a>
                     <div class="site-category">
@@ -320,19 +319,20 @@
         <div class="header-search">
             <form action="" id="J_searchForm">
                 <input type="text" id="search-text"/>
-                <input type="submit" class="search-btn iconfont" value="Search">
+                <input type="submit" class="search-btn iconfont" value="GO">
                 <div id="search-hot-words">
                     <a href="javascript:;">小米8</a>
                     <a href="javascript:;">小艾6max</a>
                 </div>
             </form>
+
         </div>
     </div>
 </div>
 <div class="home-hero-container container">
     <div class="homehero">
         <div class="heroslider">
-            <div class="lunbo">
+            <div class="lunbo" id="lunbo">
                 <ol>
                     <li class="click"></li>
                     <li></li>
@@ -340,8 +340,8 @@
                     <li></li>
                     <li></li>
                 </ol>
-                <div class="pre"></div>
-                <div class="next"></div>
+                <div class="pre" id="pre"></div>
+                <div class="next" id="next"></div>
                 <ul>
                     <li><img src="images/slider1.jpg" alt="1"></li>
                     <li><img src="images/slider2.jpg" alt="2"></li>
@@ -505,7 +505,6 @@
         </div>
     </div>
 </div>
-
 <div class="homemain">
 
     <div class="container">
